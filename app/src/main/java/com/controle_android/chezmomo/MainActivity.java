@@ -7,7 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.app.ListActivity;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class MainActivity extends ActionBarActivity {
                 data
         );
 
-        liste = (ListView)findViewById(R.id.listView);
-        liste.setAdapter(adapter);
+        //liste = (ListView)findViewById(R.id.listView);
+        //liste.setAdapter(adapter);
     }
 }

@@ -4,8 +4,52 @@
     android:layout_height="match_parent"
     >
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        card_view:cardCornerRadius="4dp"
+        android:layout_margin="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#ffffff">
+
+            <TextView
+                android:text="Formule Gourmand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textSize="75px"
+                android:textStyle="bold"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:text="Entrée + Plat + Dessert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40px"
+                android:id="@+id/textView2"
+                android:gravity="center"
+                android:layout_margin="20dp"/>
+
+            <TextView
+                android:text="23€"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="60px"
+                android:layout_margin="20dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
 </LinearLayout>
