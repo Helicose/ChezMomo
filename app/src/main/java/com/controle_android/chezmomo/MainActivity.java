@@ -1,53 +1,48 @@
 package com.controle_android.chezmomo;
 
-import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.app.ListActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.formules);
-        setTitle("Nos formules");
+        setContentView(R.layout.activity_main);
+        setTitle("Chez Momo");
 
-    }
+        final ListView liste;
 
-    public void redirectionFormule(View vue){
-        switch (vue.getId()) {
-            case R.id.cartegourmand:
-                //doSomething1();
-                break;
-            case R.id.cartebistrot:
-                //doSomething2();
-                break;
-            case R.id.cartemidi:
-                Intent MenuMidi = new Intent(MainActivity.this, CarteMidi.class); // on declare la nouvelle activite
-                startActivity (MenuMidi); //on demarre l'activite
-                break;
-            case R.id.cartepetiots:
-                Intent MenuPetiots = new Intent(MainActivity.this, CartePetiots.class); // on declare la nouvelle activite
-                startActivity (MenuPetiots); //on demarre l'activite
-                break;
-        }
+        String[] data = new String[]{
+                "Nos Formules","Carte des vins"
+        };
 
+        final ArrayAdapter<String> adapter = new ArrayAdapter<>(
+                this,
+                android.R.layout.simple_list_item_1,
+                data
+        );
+
+        liste = (ListView)findViewById(R.id.list);
+        liste.setAdapter(adapter);
+
+        liste.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position==0){
+                    setContentView(R.layout.formules);
+                }else{
+                    if(position==1){
+                        setContentView(R.layout.carte);
+                    }
+                }
+
+            }
+        });
     }
 }
-
-/*
-private View.OnClickListener lienInventaire = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent inventaire = new Intent (MainActivity.this, Inventaire.class); // on declare la nouvelle activite reliee au bouton
-            startActivity (inventaire); //on demarre l'activite
-        }
-
-    };
-
- */
