@@ -18,6 +18,9 @@
         </activity>
         <activity android:name=".CartePetiots"/>
         <activity android:name=".CarteMidi"/>
+        <activity android:name=".Formules"/>
+        <activity android:name=".Carte"/>
+        <activity android:name=".Vins"/>
     </application>
 
 </manifest>
