@@ -1,5 +1,6 @@
 package com.controle_android.chezmomo;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,20 +17,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.formules);
         setTitle("Nos formules");
 
-        ListView liste;
-
-        String[] data = new String[]{
-                "Menu Midi", "Menu Gourmand", "Menu Bistrot", "Menu des Petiots"
-        };
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                this,
-                android.R.layout.simple_list_item_1,
-                data
-        );
-
-        //liste = (ListView)findViewById(R.id.listView);
-        //liste.setAdapter(adapter);
     }
 
     public void redirectionFormule(View vue){
@@ -41,13 +28,26 @@ public class MainActivity extends AppCompatActivity {
                 //doSomething2();
                 break;
             case R.id.cartemidi:
-                setContentView(R.layout.menumidi);
-                setTitle("Choix du Menu Midi");
+                Intent MenuMidi = new Intent(MainActivity.this, CarteMidi.class); // on declare la nouvelle activite
+                startActivity (MenuMidi); //on demarre l'activite
                 break;
             case R.id.cartepetiots:
-                //doSomething1();
+                Intent MenuPetiots = new Intent(MainActivity.this, CartePetiots.class); // on declare la nouvelle activite
+                startActivity (MenuPetiots); //on demarre l'activite
                 break;
         }
 
     }
 }
+
+/*
+private View.OnClickListener lienInventaire = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent inventaire = new Intent (MainActivity.this, Inventaire.class); // on declare la nouvelle activite reliee au bouton
+            startActivity (inventaire); //on demarre l'activite
+        }
+
+    };
+
+ */
