@@ -10,7 +10,7 @@ public class Vins extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.carte);
-        setTitle("A vous la dégustation !");
+        setTitle("A la vôtre !");
 
 
     }
