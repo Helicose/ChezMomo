@@ -21,6 +21,10 @@
         <activity android:name=".Formules"/>
         <activity android:name=".Carte"/>
         <activity android:name=".Vins"/>
+        <activity android:name=".Commande"/>
+        <activity android:name=".CarteEntrees"/>
+        <activity android:name=".CartePlats"/>
+        <activity android:name=".CarteDesserts"/>
     </application>
 
 </manifest>
