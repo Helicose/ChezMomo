@@ -2,10 +2,604 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/tvplats"
-        android:text="Fragment #X"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="#e7e5e5">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cartePoissons"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                    <TextView
+                        android:text="Nos Poissons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewPoissons"
+                        android:textSize="75px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#3ae1e1"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cartePoissons1"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Boudin de brochet à la mirabelle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewPoisson1"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#3ae1e1"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="Son velouté de ciboulette et persil frisé"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPoissonsDesc1"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:text="17.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPoissonsPrix1"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cartePoissons2"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Ragoût de lotte au vin rouge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewPoisson2"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#3ae1e1"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="Lardons et billes de légumes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPoissonsDesc2"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:text="19.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPoissonsPrix2"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cartePoissons3"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Poélée de St Jacques à l'huile d'Olive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewPoisson3"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#3ae1e1"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="Ecrasée de pommes de terres, Concassée de tomates, huilde de pépins de raisins et fruits secs tièdes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPoissonsDesc3"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:text="20.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPoissonsPrix3"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteViandes"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <TextView
+                    android:text="Nos Viandes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewViandes"
+                    android:textSize="75px"
+                    android:textStyle="bold"
+                    android:textColor="@color/cardview_dark_background"
+                    android:background="#c11033"
+                    android:gravity="center"
+                    android:padding="10dp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteViandes1"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Escalope de Veau sauce crème Champignons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewViandes1"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#c11033"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="17.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewViandesPrix1"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteViandes2"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Noisettes d'Agneau roties au beurre demi-sel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewViandes2"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#c11033"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="Pommes Cocotte, jus au Romarin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewViandesDesc2"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:text="22.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewViandesPrix2"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteViandes3"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Emincés de rognons et ris de veau forestière"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewViandes3"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#c11033"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="Accompagné de sa croustille"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewViandesDesc3"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:text="23.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewViandesPrix3"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteViandes4"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Tournedos de boeuf roti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewViandes4"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#c11033"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="Tranche de foie de canard, jus à l'acidulé de groseilles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewViandesDesc4"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:text="24.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewViandesPrix4"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cartePlats"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <TextView
+                    android:text="Nos Plats Traditionnels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewPlats"
+                    android:textSize="75px"
+                    android:textStyle="bold"
+                    android:textColor="@color/cardview_dark_background"
+                    android:background="#a6a3a4"
+                    android:gravity="center"
+                    android:padding="10dp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cartePlats1"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Pieds de cochons panés en persillade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewPlats1"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#a6a3a4"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="13.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPlatsPrix1"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cartePlats2"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Jarret de proc braisé au miel et thym"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewPlats2"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#a6a3a4"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="Sur lit de choucroute, jus de viande"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPlatsDesc2"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:text="15.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPlatsPrix2"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cartePlats3"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Choucroute aux 5 viandes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewPlats3"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#a6a3a4"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="Saucisse à cuire, viennoise, Kassler fumé, poitrine fumée et quenelle de foie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPlatsDesc3"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:text="16.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPlatsPrix3"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cartePlats4"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Baeckeoffe traditionnel et salade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewPlats4"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#a6a3a4"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="Pommes de terre, Veau, Porc et Boeuf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPlatsDesc4"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:text="16.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPlatsPrix4"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </LinearLayout>

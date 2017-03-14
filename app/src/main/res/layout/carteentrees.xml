@@ -2,10 +2,311 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/tventrees"
-        android:text="Fragment #X"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="#e7e5e5">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteEntrée1"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Duo de terrines et Crudités"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewEntrée1"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="?attr/colorButtonNormal"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="Paté de porc Maison et Légumes frais"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewDesc1"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:text="12.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPrix1"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteEntrée2"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Ecrevisses a l'Auxerrois et fines herbes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewEntrée2"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="?attr/colorButtonNormal"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="Avec poélée de Champignons et Escargots d'élevage, et sa croustille de pain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewDesc2"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:text="12.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPrix2"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteEntrée3"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Aiguillettes de magret de Canard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewEntrée3"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="?attr/colorButtonNormal"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="Fumées au bois de hêtre, lentilles vertes aux dés de carottes, vinaigre de cidre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewDesc3"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:text="13.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPrix3"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteEntrée4"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Paté en croute au Riesling et Mousse de foie de Canard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewEntrée4"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="?attr/colorButtonNormal"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="Gelée de vin et salade craquante"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewDesc4"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:text="14.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPrix4"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteEntrée5"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Saumon d'Ecosse sauvage, Fumé par nos soins"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewEntrée5"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="?attr/colorButtonNormal"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="accompagné de son blini et crème de Raifort"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewDesc5"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:text="16.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPrix5"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteEntrée6"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="redirectionFormule">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Escargots d'élevage au beurre d'ail et Fines herbes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewEntrée6"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="?attr/colorButtonNormal"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="Les 6 pour 9.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPrix6_1"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:text="Les 12 pour 16.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewPrix6_2"
+                        android:gravity="center"
+                        android:layout_margin="20dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </LinearLayout>

@@ -42,31 +42,17 @@ public class MainActivity extends AppCompatActivity {
                 if(position==0){
                     Intent formules = new Intent(MainActivity.this, Formules.class); // on declare la nouvelle activite
                     startActivity (formules); //on demarre l'activite
-                }else{
-                    if(position==1){
+                }else if(position==1){
                         Intent carte = new Intent(MainActivity.this, Carte.class); // on declare la nouvelle activite
                         startActivity (carte); //on demarre l'activite
-                    }
-                    else if(position==2){
+                } else if(position==2){
                         Intent vins = new Intent(MainActivity.this, Vins.class); // on declare la nouvelle activite
                         startActivity (vins); //on demarre l'activite
-                    }
                 }
-
             }
+
         });
     }
-
 }
 
-/*
-private View.OnClickListener lienInventaire = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent inventaire = new Intent (MainActivity.this, Inventaire.class); // on declare la nouvelle activite reliee au bouton
-            startActivity (inventaire); //on demarre l'activite
-        }
 
-    };
-
- */

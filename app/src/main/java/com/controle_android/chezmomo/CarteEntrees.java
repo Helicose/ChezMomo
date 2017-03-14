@@ -35,8 +35,6 @@ public class CarteEntrees extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.carteentrees, container, false);
-        TextView tvTitle = (TextView) view.findViewById(R.id.tventrees);
-        tvTitle.setText("Ici on va mettre des entrées");
         return view;
     }
 }
