@@ -35,8 +35,6 @@ public class CarteDesserts extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.cartedesserts, container, false);
-        TextView tvTitle = (TextView) view.findViewById(R.id.tvdesserts);
-        tvTitle.setText("Ici on va mettre des desserts");
         return view;
     }
 }

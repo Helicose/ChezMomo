@@ -2,10 +2,615 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/tvdesserts"
-        android:text="Fragment #X"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ScrollView01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="#e7e5e5">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/carteGlaces"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="redirectionFormule">
+
+                    <TextView
+                        android:text="Les glaces"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewGlaces"
+                        android:textSize="75px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/carteGlaces1"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="redirectionFormule">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#ffffff">
+
+                        <TextView
+                            android:text="Les parfums :"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textViewGlaces1"
+                            android:textSize="50px"
+                            android:textStyle="bold"
+                            android:textColor="@color/cardview_dark_background"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:text="Vanille, Chocolat, Fraise, Pistache"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewGlacesDesc1"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+
+                        <TextView
+                            android:text="2.00€ La boule"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewGlacesPrix1"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/carteSorbets1"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="redirectionFormule">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#ffffff">
+
+                        <TextView
+                            android:text="Les sorbets maisons :"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textViewSorbets1"
+                            android:textSize="50px"
+                            android:textStyle="bold"
+                            android:textColor="@color/cardview_dark_background"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:text="Citron, Framboise, Mangue, Fruits de la passion, Mirabelle, Menthe, Ananas, Pomme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSorbetsDesc1"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+
+                        <TextView
+                            android:text="2.00€ La boule"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSorbetsPrix1"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/carteSubtils"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="redirectionFormule">
+
+                    <TextView
+                        android:text="Les subtils"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewSubtils"
+                        android:textSize="75px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#90fff9"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/carteSubtils1"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="redirectionFormule">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#ffffff">
+
+                        <TextView
+                            android:text="Tarte aux fruits Maison"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textViewSubtils1"
+                            android:textSize="50px"
+                            android:textStyle="bold"
+                            android:textColor="@color/cardview_dark_background"
+                            android:background="#90fff9"
+                            android:gravity="center"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:text="Gâteau aux fruits de la saison"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsDesc1"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+
+                        <TextView
+                            android:text="5.00€"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsPrix1"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/carteSubtils2"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="redirectionFormule">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#ffffff">
+
+                        <TextView
+                            android:text="Dame Blanche"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textViewSubtils2"
+                            android:textSize="50px"
+                            android:textStyle="bold"
+                            android:textColor="@color/cardview_dark_background"
+                            android:background="#90fff9"
+                            android:gravity="center"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:text="Glace à la vanille, Meringue et sauce chaude au chocolat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsDesc2"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+
+                        <TextView
+                            android:text="6.00€"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsPrix2"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/carteSubtils3"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="redirectionFormule">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#ffffff">
+
+                        <TextView
+                            android:text="Colonel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textViewSubtils3"
+                            android:textSize="50px"
+                            android:textStyle="bold"
+                            android:textColor="@color/cardview_dark_background"
+                            android:background="#90fff9"
+                            android:gravity="center"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:text="Sorbet au Citron et Vodka"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsDesc3"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+
+                        <TextView
+                            android:text="6.00€"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsPrix3"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/carteSubtils4"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="redirectionFormule">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#ffffff">
+
+                        <TextView
+                            android:text="Crème brulée à la violette et lavande"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textViewSubtils4"
+                            android:textSize="50px"
+                            android:textStyle="bold"
+                            android:textColor="@color/cardview_dark_background"
+                            android:background="#90fff9"
+                            android:gravity="center"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:text="Crème brulée parfumée aux fleurs magenta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsDesc4"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+
+                        <TextView
+                            android:text="7.00€"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsPrix4"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/carteSubtils5"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="redirectionFormule">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#ffffff">
+
+                        <TextView
+                            android:text="Profiteroles et glace à la Vanille"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textViewSubtils5"
+                            android:textSize="50px"
+                            android:textStyle="bold"
+                            android:textColor="@color/cardview_dark_background"
+                            android:background="#90fff9"
+                            android:gravity="center"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:text="Avec leur sauce au chocolat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsDesc5"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+
+                        <TextView
+                            android:text="7.00€"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsPrix5"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/carteSubtils6"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="redirectionFormule">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#ffffff">
+
+                        <TextView
+                            android:text="Fondant au chocolat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textViewSubtils6"
+                            android:textSize="50px"
+                            android:textStyle="bold"
+                            android:textColor="@color/cardview_dark_background"
+                            android:background="#90fff9"
+                            android:gravity="center"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:text="Crème anglaise à la vanille Bourbon, sorbet Menthe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsDesc6"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+
+                        <TextView
+                            android:text="8.00€"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsPrix6"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/carteSubtils7"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="redirectionFormule">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#ffffff">
+
+                        <TextView
+                            android:text='Poire "Conférence" pochée au vin rouge et épices'
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textViewSubtils7"
+                            android:textSize="50px"
+                            android:textStyle="bold"
+                            android:textColor="@color/cardview_dark_background"
+                            android:background="#90fff9"
+                            android:gravity="center"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:text="Accompagnée de son sorbet façon vin chaud"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsDesc7"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+
+                        <TextView
+                            android:text="8.00€"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsPrix7"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/carteSubtils8"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="redirectionFormule">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#ffffff">
+
+                        <TextView
+                            android:text="Baba Bouchon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textViewSubtils8"
+                            android:textSize="50px"
+                            android:textStyle="bold"
+                            android:textColor="@color/cardview_dark_background"
+                            android:background="#90fff9"
+                            android:gravity="center"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:text="Avec sa liqueur de Gewurztraminer et glace maison à la vanille"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsDesc8"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+
+                        <TextView
+                            android:text="9.00€"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsPrix8"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/carteSubtils9"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="redirectionFormule">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#ffffff">
+
+                        <TextView
+                            android:text="Mirabelles caramélisées"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textViewSubtils9"
+                            android:textSize="50px"
+                            android:textStyle="bold"
+                            android:textColor="@color/cardview_dark_background"
+                            android:background="#90fff9"
+                            android:gravity="center"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:text="et flambées à l'eau de vie en chaud froid de vanille"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsDesc9"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+
+                        <TextView
+                            android:text="9.00€"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="40px"
+                            android:id="@+id/textViewSubtilsPrix9"
+                            android:gravity="center"
+                            android:layout_margin="20dp"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
 </LinearLayout>
