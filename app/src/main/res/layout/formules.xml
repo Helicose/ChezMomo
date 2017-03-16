@@ -15,10 +15,10 @@
 
         <android.support.v7.widget.CardView
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/cartegourmand"
+            android:id="@+id/carteCampagne"
             android:layout_gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="wrap_content"
             card_view:cardCornerRadius="4dp"
             android:layout_marginBottom="20dp"
             android:onClick="redirectionFormule">
@@ -30,11 +30,11 @@
                 android:background="#ffffff">
 
                 <TextView
-                    android:text="Menu Gourmand"
+                    android:text="Menu de la campagne"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView"
-                    android:textSize="75px"
+                    android:id="@+id/MenuCampagne"
+                    android:textSize="60px"
                     android:textStyle="bold"
                     android:textColor="@color/cardview_dark_background"
                     android:background="?attr/colorButtonNormal"
@@ -42,16 +42,68 @@
                     android:padding="10dp" />
 
                 <TextView
-                    android:text="Entrée + Plat + Dessert"
+                    android:text="Duo de terrines maison"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="40px"
-                    android:id="@+id/textView2"
+                    android:id="@+id/Campagne1"
                     android:gravity="center"
-                    android:layout_margin="20dp"/>
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:text="Saucisson du terroir, crudités"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="40px"
+                    android:id="@+id/Campagne2"
+                    android:gravity="center"
+                    android:layout_margin="5dp"/>
 
                 <TextView
-                    android:text="23€"
+                    android:text="***"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="50px"
+                    android:id="@+id/CampagneEspace1"
+                    android:gravity="center"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:text="Jambon du pays, pommes de terre roties"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="40px"
+                    android:id="@+id/Campagne3"
+                    android:gravity="center"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:text="Salade, fromage blanc épicé"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="40px"
+                    android:id="@+id/Campagne4"
+                    android:gravity="center"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:text="***"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="50px"
+                    android:id="@+id/CampagneEspace2"
+                    android:gravity="center"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:text="Menu servi à partir de deux personnes, sauf le dimanche Midi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30px"
+                    android:id="@+id/CampagneInfo1"
+                    android:gravity="center"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:text="14.00€"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView3"
@@ -64,10 +116,10 @@
 
         <android.support.v7.widget.CardView
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/cartebistrot"
+            android:id="@+id/carteHackenberg"
             android:layout_gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="wrap_content"
             card_view:cardCornerRadius="4dp"
             android:layout_marginBottom="20dp"
             android:onClick="redirectionFormule">
@@ -79,44 +131,122 @@
                 android:background="#ffffff">
 
                 <TextView
-                    android:text="Menu Bistrot"
+                    android:text="Menu du Hackenberg"
                     android:background="?attr/colorButtonNormal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView4"
-                    android:textSize="75px"
+                    android:id="@+id/textViewHackenberg"
+                    android:textSize="60px"
                     android:textStyle="bold"
                     android:textColor="@color/cardview_dark_background"
                     android:gravity="center"
                     android:padding="10dp" />
 
                 <TextView
-                    android:text="Entrée + Plat"
+                    android:text="Poélée de Champignons et d'escargots d'élévage,"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="40px"
-                    android:id="@+id/textView5"
+                    android:id="@+id/textViewHack1"
                     android:gravity="center"
                     android:layout_marginTop="10dp" />
-
                 <TextView
-                    android:text="ou"
+                    android:text="Ecrevisses à l'Auxerrois et fines herbes, croustille de pain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="40px"
+                    android:id="@+id/textViewHack2"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:text="OU"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="35px"
-                    android:id="@+id/textView6"
+                    android:id="@+id/textViewHackOu1"
                     android:gravity="center" />
-
                 <TextView
-                    android:text="Plat + Dessert"
+                    android:text="Aiguillettes de magret de Canard fumées au bois de hêtre,"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="40px"
-                    android:id="@+id/textView7"
+                    android:id="@+id/textViewHack3"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Lentilles vertes et dés de carottes, vinaigre de cidre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="40px"
+                    android:id="@+id/textViewHack4"
                     android:gravity="center" />
 
                 <TextView
-                    android:text="19€"
+                    android:text="***"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="50px"
+                    android:id="@+id/HackEspace1"
+                    android:gravity="center"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:text="Sorbet Mirabelles arrosé"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="40px"
+                    android:id="@+id/textViewHack5"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="***"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="50px"
+                    android:id="@+id/HackEspace2"
+                    android:gravity="center"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:text="Ragoût de lotte au vin rouge, lardons, et billes de légumes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="40px"
+                    android:id="@+id/textViewHack6_1"
+                    android:gravity="center" />
+                <TextView
+                    android:text="OU"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="35px"
+                    android:id="@+id/textViewHackOu2"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Emincés de rognons et ris de veau forestière, sa croustille"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="40px"
+                    android:id="@+id/textViewHack6_2"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="***"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="50px"
+                    android:id="@+id/HackEspace3"
+                    android:gravity="center"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:text="Mousseline glacée poire, son émincé de fruit macéré au vin rouge et épices"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="40px"
+                    android:id="@+id/textViewHack7"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="29.00€"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView8"

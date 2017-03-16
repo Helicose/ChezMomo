@@ -20,11 +20,11 @@ public class Formules extends AppCompatActivity {
 
     public void redirectionFormule(View vue){
         switch (vue.getId()) {
-            case R.id.cartegourmand:
+            case R.id.carteCampagne:
                 Intent carte = new Intent(Formules.this, Carte.class); // on declare la nouvelle activite
                 startActivity (carte); //on demarre l'activite
                 break;
-            case R.id.cartebistrot:
+            case R.id.carteHackenberg:
                 Intent carte2 = new Intent(Formules.this, Carte.class); // on declare la nouvelle activite
                 startActivity (carte2); //on demarre l'activite
                 break;
