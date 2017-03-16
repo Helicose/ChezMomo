@@ -7,6 +7,9 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -41,17 +44,50 @@ public class MainActivity extends AppCompatActivity {
                 if(position==0){
                     Intent formules = new Intent(MainActivity.this, Formules.class); // on declare la nouvelle activite
                     startActivity (formules); //on demarre l'activite
-                }else if(position==1){
+                }else{
+                    if(position==1){
                         Intent carte = new Intent(MainActivity.this, Carte.class); // on declare la nouvelle activite
                         startActivity (carte); //on demarre l'activite
-                } else if(position==2){
+                    }
+                    else if(position==2){
                         Intent vins = new Intent(MainActivity.this, Vins.class); // on declare la nouvelle activite
                         startActivity (vins); //on demarre l'activite
+                    }
                 }
-            }
 
+            }
         });
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //ajoute les entrées de menu_test à l'ActionBar
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.commande:
+                Intent commande = new Intent(MainActivity.this, Commande.class); // on declare la nouvelle activite
+                startActivity (commande); //on demarre l'activite
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
 }
 
+/*
+private View.OnClickListener lienInventaire = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent inventaire = new Intent (MainActivity.this, Inventaire.class); // on declare la nouvelle activite reliee au bouton
+            startActivity (inventaire); //on demarre l'activite
+        }
 
+    };
+
+ */
