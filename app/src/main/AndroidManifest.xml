@@ -16,15 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CartePetiots"/>
-        <activity android:name=".CarteMidi"/>
         <activity android:name=".Formules"/>
         <activity android:name=".Carte"/>
         <activity android:name=".Vins"/>
         <activity android:name=".Commande"/>
-        <activity android:name=".CarteEntrees"/>
-        <activity android:name=".CartePlats"/>
-        <activity android:name=".CarteDesserts"/>
     </application>
 
 </manifest>

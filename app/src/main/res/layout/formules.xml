@@ -307,7 +307,7 @@
                         android:paddingLeft="30dp">
 
                         <TextView
-                            android:text="3 entrées"
+                            android:text="1 Entrée + 1 Plat au choix"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="40px"
@@ -318,10 +318,10 @@
                             android:layout_height="wrap_content"
                             android:textSize="40px"
                             android:id="@+id/textView12"
-                            android:text="3 plats"
+                            android:text="OU"
                             android:gravity="left" />
                         <TextView
-                            android:text="3 desserts"
+                            android:text="1 Plat + 1 Dessert au choix"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="40px"
@@ -333,7 +333,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:text="13€"
+                    android:text="Prix en fonction des choix    "
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView14"

@@ -23,20 +23,20 @@ public class Formules extends AppCompatActivity {
     public void redirectionFormule(View vue){
         switch (vue.getId()) {
             case R.id.carteCampagne:
-                Intent carte = new Intent(Formules.this, Carte.class); // on declare la nouvelle activite
-                startActivity (carte); //on demarre l'activite
+                Intent commandes = new Intent(Formules.this, Commande.class); // on declare la nouvelle activite
+                startActivity (commandes); //on demarre l'activite
                 break;
             case R.id.carteHackenberg:
-                Intent carte2 = new Intent(Formules.this, Carte.class); // on declare la nouvelle activite
-                startActivity (carte2); //on demarre l'activite
+                Intent commandes2 = new Intent(Formules.this, Commande.class); // on declare la nouvelle activite
+                startActivity (commandes2); //on demarre l'activite
                 break;
             case R.id.cartemidi:
-                Intent menuMidi = new Intent(Formules.this, CarteMidi.class); // on declare la nouvelle activite
-                startActivity (menuMidi); //on demarre l'activite
+                Intent cartes = new Intent(Formules.this, Carte.class); // on declare la nouvelle activite
+                startActivity (cartes); //on demarre l'activite
                 break;
             case R.id.cartepetiots:
-                Intent menuPetiots = new Intent(Formules.this, CartePetiots.class); // on declare la nouvelle activite
-                startActivity (menuPetiots); //on demarre l'activite
+                Intent cartes2 = new Intent(Formules.this, Carte.class); // on declare la nouvelle activite
+                startActivity (cartes2); //on demarre l'activite
                 break;
         }
 
