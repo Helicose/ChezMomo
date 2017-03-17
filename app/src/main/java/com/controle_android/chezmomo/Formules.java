@@ -97,6 +97,7 @@ public class Formules extends AppCompatActivity {
             case R.id.formules:
                 Intent formules = new Intent(Formules.this, Formules.class); // on declare la nouvelle activite
                 startActivity (formules); //on demarre l'activite
+                finish();
                 return true;
             case R.id.vins:
                 Intent vins = new Intent(Formules.this, Vins.class); // on declare la nouvelle activite

@@ -47,6 +47,7 @@ public class Vins extends AppCompatActivity {
             case R.id.vins:
                 Intent vins = new Intent(Vins.this, Vins.class); // on declare la nouvelle activite
                 startActivity (vins); //on demarre l'activite
+                finish();
                 return true;
 
         }
