@@ -81,16 +81,7 @@ public class Commande extends AppCompatActivity {
     }
 
     public void actionValider(View vue){
-        sharedPreferences
-                .edit()
-                .putStringSet("commandes", null)
-                .putStringSet("prix", null)
-                .apply();
-
         Toast.makeText(getApplicationContext(), "Merci pour votre commande, elle arrive au plus vite !", Toast.LENGTH_SHORT).show();
-
-        Intent acceuil = new Intent(Commande.this, MainActivity.class); // on declare la nouvelle activite
-        startActivity (acceuil); //on demarre l'activite
     }
 
     public void actionAnnuler(View vue){
@@ -104,5 +95,10 @@ public class Commande extends AppCompatActivity {
 
         Intent acceuil = new Intent(Commande.this, MainActivity.class); // on declare la nouvelle activite
         startActivity (acceuil); //on demarre l'activite
+    }
+
+    public void actionContinuer(View vue){
+        Intent formules = new Intent(Commande.this, Formules.class); // on declare la nouvelle activite
+        startActivity (formules); //on demarre l'activite
     }
 }
