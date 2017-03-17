@@ -38,6 +38,7 @@ public class Formules extends AppCompatActivity {
                 commandes.putExtra("nom", nom);
                 commandes.putExtra("prix", prix);
                 startActivity (commandes); //on demarre l'activite
+                finish();
                 break;
 
             case R.id.carteHackenberg:
@@ -48,6 +49,7 @@ public class Formules extends AppCompatActivity {
                 commandes.putExtra("nom", nom);
                 commandes.putExtra("prix", prix);
                 startActivity (commandes); //on demarre l'activite
+                finish();
                 break;
 
             case R.id.cartemidi:
@@ -58,6 +60,7 @@ public class Formules extends AppCompatActivity {
                 commandes.putExtra("nom", nom);
                 commandes.putExtra("prix", prix);
                 startActivity (commandes); //on demarre l'activite
+                finish();
                 break;
 
             case R.id.cartepetiots:
@@ -68,6 +71,7 @@ public class Formules extends AppCompatActivity {
                 commandes.putExtra("nom", nom);
                 commandes.putExtra("prix", prix);
                 startActivity (commandes); //on demarre l'activite
+                finish();
                 break;
         }
 
@@ -88,6 +92,7 @@ public class Formules extends AppCompatActivity {
             case R.id.commande:
                 Intent commande = new Intent(Formules.this, Commande.class); // on declare la nouvelle activite
                 startActivity (commande); //on demarre l'activite
+                finish();
                 return true;
         }
 
@@ -95,14 +100,3 @@ public class Formules extends AppCompatActivity {
     }
 }
 
-/*
-private View.OnClickListener lienInventaire = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent inventaire = new Intent (MainActivity.this, Inventaire.class); // on declare la nouvelle activite reliee au bouton
-            startActivity (inventaire); //on demarre l'activite
-        }
-
-    };
-
- */

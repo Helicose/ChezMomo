@@ -1,8 +1,633 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText">
 
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
 
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="#e7e5e5">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/Blancs"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="false"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Nos Vins Blancs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewBlancs"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#fdf8ce"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/BourgogneBlancs"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="false"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Bourgogne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewBourgogneBlanc"
+                        android:textSize="45px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#fdf8ce"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteChablis"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="ajoutVin"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="AOP Chablis 1er cru 'Beauroy', Cave de la Chablisienne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewChablis"
+                        android:textSize="40px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#fdf8ce"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="2012	75cl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewChablisDesc1"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:text="41.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewChablisPrix1"
+                        android:gravity="center"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/Alsace"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="false"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Alsace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewAlsace"
+                        android:textSize="45px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#fdf8ce"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteGerwurztraminer"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="ajoutVin"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="AOP Gerwurztraminer 'Ostenberg', Domaine Loew"                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewGerwur"
+                        android:textSize="40px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#fdf8ce"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="2013	75cl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewGervurDesc1"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:text="48.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewGervurPrix1"
+                        android:gravity="center"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/Rouges"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="false"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Nos Vins Rouges"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewRouges"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#ba3337"
+                        android:gravity="center"
+
+                        android:padding="10dp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/Bordeaux"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="false"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Bordeaux - Médoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewBordeaux"
+                        android:textSize="45px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#ba3337"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteHautmedoc"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="ajoutVin"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="AOP Haut-Médoc, Moulin La Lagune"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewHautMedoc"
+                        android:textSize="40px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#ba3337"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="2012	75cl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewHautMedocDesc1"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:text="54.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewHautMedocPrix1"
+                        android:gravity="center"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteMedoc"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="ajoutVin"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="AOP Médoc, Château Preuillac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewMedoc"
+                        android:textSize="40px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#ba3337"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="2010	75cl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewMedocDesc1"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:text="50.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewMedocPrix1"
+                        android:gravity="center"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/BourgogneRouges"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="false"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Bourgogne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewBourgogneRouge"
+                        android:textSize="45px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#ba3337"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteBeaune"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="ajoutVin"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="AOP Beaune, Château Genot Boulanger 'En Lulunne'"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewBeaune"
+                        android:textSize="40px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#ba3337"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="2011	75cl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewBeauneDesc1"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:text="52.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewBeaunePrix1"
+                        android:gravity="center"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/SudOuest"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="false"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Sud-Ouest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewSudOuest"
+                        android:textSize="45px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#ba3337"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteMadiran"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="ajoutVin"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="AOP Madiran, Domaine Capmartin 'Cuvée du Couvent'"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewMadiran"
+                        android:textSize="40px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#ba3337"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="2011	75cl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewMadiranDesc1"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:text="38.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewMadiranPrix1"
+                        android:gravity="center"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/Roses"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="false"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="Nos Vins Rosés"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewRoses"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#dc84b0"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carteProvence"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="ajoutVin"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:text="AOP Côtes de Provence, Château de Pampelonne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewProvence"
+                        android:textSize="40px"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:background="#dc84b0"
+                        android:gravity="center"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="2015	75cl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewProvenceDesc1"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:text="42.00€"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:id="@+id/textViewProvencePrix1"
+                        android:gravity="center"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
+

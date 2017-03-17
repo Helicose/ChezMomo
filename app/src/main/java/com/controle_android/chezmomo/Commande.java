@@ -95,10 +95,12 @@ public class Commande extends AppCompatActivity {
 
         Intent acceuil = new Intent(Commande.this, MainActivity.class); // on declare la nouvelle activite
         startActivity (acceuil); //on demarre l'activite
+        finish();
     }
 
     public void actionContinuer(View vue){
         Intent formules = new Intent(Commande.this, Formules.class); // on declare la nouvelle activite
         startActivity (formules); //on demarre l'activite
+        finish();
     }
 }
