@@ -5,8 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class Vins extends AppCompatActivity {
+
+    Intent commandes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,4 +39,79 @@ public class Vins extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void ajoutVin(View vue){
+        int prix;
+        String nom;
+
+        switch (vue.getId()) {
+            case R.id.carteChablis:
+                prix = 41;
+                nom = "AOP Chablis 1er cru 75cl";
+                commandes = new Intent(Vins.this, Commande.class); // on declare la nouvelle activite
+                commandes.putExtra("nom", nom);
+                commandes.putExtra("prix", prix);
+                startActivity (commandes); //on demarre l'activite
+                break;
+
+            case R.id.carteGerwurztraminer:
+                prix = 48;
+                nom = "AOP Gerwurztraminer 'Ostenberg' 75cl";
+
+                commandes = new Intent(Vins.this, Commande.class); // on declare la nouvelle activite
+                commandes.putExtra("nom", nom);
+                commandes.putExtra("prix", prix);
+                startActivity (commandes); //on demarre l'activite
+                break;
+
+            case R.id.carteHautmedoc:
+                prix = 54;
+                nom = "AOP Haut-Médoc 75cl";
+
+                commandes = new Intent(Vins.this, Commande.class); // on declare la nouvelle activite
+                commandes.putExtra("nom", nom);
+                commandes.putExtra("prix", prix);
+                startActivity (commandes); //on demarre l'activite
+                break;
+
+            case R.id.carteMedoc:
+                prix = 50;
+                nom = "AOP Médoc 75cl";
+
+                commandes = new Intent(Vins.this, Commande.class); // on declare la nouvelle activite
+                commandes.putExtra("nom", nom);
+                commandes.putExtra("prix", prix);
+                startActivity (commandes); //on demarre l'activite
+                break;
+
+            case R.id.carteBeaune:
+                prix = 52;
+                nom = "AOP Beaune 75cl";
+
+                commandes = new Intent(Vins.this, Commande.class); // on declare la nouvelle activite
+                commandes.putExtra("nom", nom);
+                commandes.putExtra("prix", prix);
+                startActivity (commandes); //on demarre l'activite
+                break;
+
+            case R.id.carteMadiran:
+                prix = 38;
+                nom = "AOP Madiran 75cl";
+
+                commandes = new Intent(Vins.this, Commande.class); // on declare la nouvelle activite
+                commandes.putExtra("nom", nom);
+                commandes.putExtra("prix", prix);
+                startActivity (commandes); //on demarre l'activite
+                break;
+
+            case R.id.carteProvence:
+                prix = 42;
+                nom = "AOP Côtes de Provence 75cl";
+
+                commandes = new Intent(Vins.this, Commande.class); // on declare la nouvelle activite
+                commandes.putExtra("nom", nom);
+                commandes.putExtra("prix", prix);
+                startActivity (commandes); //on demarre l'activite
+                break;
+        }
 }
