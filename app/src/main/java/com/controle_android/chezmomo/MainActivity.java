@@ -1,6 +1,7 @@
 package com.controle_android.chezmomo;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -17,11 +18,19 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
+    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        sharedPreferences = getSharedPreferences("commandes", MODE_PRIVATE);
+        sharedPreferences
+                .edit()
+                .putStringSet("commandes", null)
+                .putStringSet("prix", null)
+                .apply();
 
         final ListView liste;
 
