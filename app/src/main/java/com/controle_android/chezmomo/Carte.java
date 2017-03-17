@@ -83,22 +83,18 @@ public class Carte extends AppCompatActivity {
             case R.id.commande:
                 Intent commande = new Intent(Carte.this, Commande.class); // on declare la nouvelle activite
                 startActivity (commande); //on demarre l'activite
-                finish();
                 return true;
             case R.id.menu:
                 Intent menu = new Intent(Carte.this, MainActivity.class); // on declare la nouvelle activite
                 startActivity (menu); //on demarre l'activite
-                finish();
                 return true;
             case R.id.formules:
                 Intent formules = new Intent(Carte.this, Formules.class); // on declare la nouvelle activite
                 startActivity (formules); //on demarre l'activite
-                finish();
                 return true;
             case R.id.vins:
                 Intent vins = new Intent(Carte.this, Vins.class); // on declare la nouvelle activite
                 startActivity (vins); //on demarre l'activite
-                finish();
                 return true;
         }
 

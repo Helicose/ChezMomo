@@ -38,7 +38,6 @@ public class Formules extends AppCompatActivity {
                 commandes.putExtra("nom", nom);
                 commandes.putExtra("prix", prix);
                 startActivity (commandes); //on demarre l'activite
-                finish();
                 break;
 
             case R.id.carteHackenberg:
@@ -49,7 +48,6 @@ public class Formules extends AppCompatActivity {
                 commandes.putExtra("nom", nom);
                 commandes.putExtra("prix", prix);
                 startActivity (commandes); //on demarre l'activite
-                finish();
                 break;
 
             case R.id.cartemidi:
@@ -60,7 +58,6 @@ public class Formules extends AppCompatActivity {
                 commandes.putExtra("nom", nom);
                 commandes.putExtra("prix", prix);
                 startActivity (commandes); //on demarre l'activite
-                finish();
                 break;
 
             case R.id.cartepetiots:
@@ -71,7 +68,6 @@ public class Formules extends AppCompatActivity {
                 commandes.putExtra("nom", nom);
                 commandes.putExtra("prix", prix);
                 startActivity (commandes); //on demarre l'activite
-                finish();
                 break;
         }
 
@@ -93,7 +89,6 @@ public class Formules extends AppCompatActivity {
             case R.id.commande:
                 Intent commande = new Intent(Formules.this, Commande.class); // on declare la nouvelle activite
                 startActivity (commande); //on demarre l'activite
-                finish();
                 return true;
             case R.id.menu:
                 Intent menu = new Intent(Formules.this, MainActivity.class); // on declare la nouvelle activite
