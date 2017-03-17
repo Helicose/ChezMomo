@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         final ListView liste;
 
         String[] data = new String[]{
-                "Nos Formules","A la carte", "Tous nos vins"
+                "Nos Formules","A la carte", "Carte des vins"
         };
 
         final ArrayAdapter<String> adapter = new ArrayAdapter<>(

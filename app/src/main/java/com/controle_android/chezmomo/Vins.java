@@ -15,7 +15,7 @@ public class Vins extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.carte);
+        setContentView(R.layout.vins);
         setTitle("A la vôtre !");
 
 
@@ -25,22 +25,36 @@ public class Vins extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         //ajoute les entrées de menu_test à l'ActionBar
         getMenuInflater().inflate(R.menu.menu, menu);
+        getMenuInflater().inflate(R.menu.menu2, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.commande:
                 Intent commande = new Intent(Vins.this, Commande.class); // on declare la nouvelle activite
-                startActivity (commande); //on demarre l'activite
+                startActivity(commande); //on demarre l'activite
                 return true;
+            case R.id.menu:
+                Intent menu = new Intent(Vins.this, MainActivity.class); // on declare la nouvelle activite
+                startActivity (menu); //on demarre l'activite
+                return true;
+            case R.id.formules:
+                Intent formules = new Intent(Vins.this, Formules.class); // on declare la nouvelle activite
+                startActivity (formules); //on demarre l'activite
+                return true;
+            case R.id.vins:
+                Intent vins = new Intent(Vins.this, Vins.class); // on declare la nouvelle activite
+                startActivity (vins); //on demarre l'activite
+                return true;
+
         }
 
         return super.onOptionsItemSelected(item);
     }
 
-    public void ajoutVin(View vue){
+    public void ajoutVin(View vue) {
         int prix;
         String nom;
 
@@ -51,7 +65,7 @@ public class Vins extends AppCompatActivity {
                 commandes = new Intent(Vins.this, Commande.class); // on declare la nouvelle activite
                 commandes.putExtra("nom", nom);
                 commandes.putExtra("prix", prix);
-                startActivity (commandes); //on demarre l'activite
+                startActivity(commandes); //on demarre l'activite
                 break;
 
             case R.id.carteGerwurztraminer:
@@ -61,7 +75,7 @@ public class Vins extends AppCompatActivity {
                 commandes = new Intent(Vins.this, Commande.class); // on declare la nouvelle activite
                 commandes.putExtra("nom", nom);
                 commandes.putExtra("prix", prix);
-                startActivity (commandes); //on demarre l'activite
+                startActivity(commandes); //on demarre l'activite
                 break;
 
             case R.id.carteHautmedoc:
@@ -71,7 +85,7 @@ public class Vins extends AppCompatActivity {
                 commandes = new Intent(Vins.this, Commande.class); // on declare la nouvelle activite
                 commandes.putExtra("nom", nom);
                 commandes.putExtra("prix", prix);
-                startActivity (commandes); //on demarre l'activite
+                startActivity(commandes); //on demarre l'activite
                 break;
 
             case R.id.carteMedoc:
@@ -81,7 +95,7 @@ public class Vins extends AppCompatActivity {
                 commandes = new Intent(Vins.this, Commande.class); // on declare la nouvelle activite
                 commandes.putExtra("nom", nom);
                 commandes.putExtra("prix", prix);
-                startActivity (commandes); //on demarre l'activite
+                startActivity(commandes); //on demarre l'activite
                 break;
 
             case R.id.carteBeaune:
@@ -91,7 +105,7 @@ public class Vins extends AppCompatActivity {
                 commandes = new Intent(Vins.this, Commande.class); // on declare la nouvelle activite
                 commandes.putExtra("nom", nom);
                 commandes.putExtra("prix", prix);
-                startActivity (commandes); //on demarre l'activite
+                startActivity(commandes); //on demarre l'activite
                 break;
 
             case R.id.carteMadiran:
@@ -101,7 +115,7 @@ public class Vins extends AppCompatActivity {
                 commandes = new Intent(Vins.this, Commande.class); // on declare la nouvelle activite
                 commandes.putExtra("nom", nom);
                 commandes.putExtra("prix", prix);
-                startActivity (commandes); //on demarre l'activite
+                startActivity(commandes); //on demarre l'activite
                 break;
 
             case R.id.carteProvence:
@@ -111,7 +125,8 @@ public class Vins extends AppCompatActivity {
                 commandes = new Intent(Vins.this, Commande.class); // on declare la nouvelle activite
                 commandes.putExtra("nom", nom);
                 commandes.putExtra("prix", prix);
-                startActivity (commandes); //on demarre l'activite
+                startActivity(commandes); //on demarre l'activite
                 break;
         }
+    }
 }

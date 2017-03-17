@@ -5,6 +5,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -99,8 +101,35 @@ public class Commande extends AppCompatActivity {
     }
 
     public void actionContinuer(View vue){
-        Intent formules = new Intent(Commande.this, Formules.class); // on declare la nouvelle activite
+        Intent formules = new Intent(Commande.this, MainActivity.class); // on declare la nouvelle activite
         startActivity (formules); //on demarre l'activite
         finish();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //ajoute les entrées de menu_test à l'ActionBar
+        getMenuInflater().inflate(R.menu.menu2, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.menu:
+                Intent menu = new Intent(Commande.this, MainActivity.class); // on declare la nouvelle activite
+                startActivity (menu); //on demarre l'activite
+                return true;
+            case R.id.formules:
+                Intent formules = new Intent(Commande.this, Formules.class); // on declare la nouvelle activite
+                startActivity (formules); //on demarre l'activite
+                return true;
+            case R.id.vins:
+                Intent vins = new Intent(Commande.this, Vins.class); // on declare la nouvelle activite
+                startActivity (vins); //on demarre l'activite
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
