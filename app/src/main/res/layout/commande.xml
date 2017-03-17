@@ -34,7 +34,7 @@
         </android.support.v7.widget.CardView>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/boutonValider"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnSpan="2"
@@ -44,10 +44,11 @@
             android:layout_marginTop="10dp"
             android:layout_rowSpan="2"
             android:gravity="center"
-            android:text="Valider" />
+            android:text="Valider"
+            android:onClick="actionValider"/>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/boutonAnnuler"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnSpan="2"
@@ -56,7 +57,8 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Annuler" />
+            android:text="Annuler"
+            android:onClick="actionAnnuler"/>
 
     </GridLayout>
 </LinearLayout>

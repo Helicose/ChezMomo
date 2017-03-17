@@ -5,7 +5,9 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -35,7 +37,7 @@ public class Commande extends AppCompatActivity {
         Set<String> listecommandes = sharedPreferences.getStringSet("commandes", new HashSet<String>());
         Set<String> listeprix = sharedPreferences.getStringSet("prix", new HashSet<String>());
 
-        if(sharedPreferences.getStringSet("prix", null) != null){
+        if(listecommandes.size() >= 0){
 
             if(nom != null){
                 listecommandes.add(nom);
@@ -48,7 +50,6 @@ public class Commande extends AppCompatActivity {
                         .putStringSet("prix", listeprix)
                         .apply();
             }
-
             int prixTotal = 0;
 
             for (int i=0; i<listecommandes.size();i++){
@@ -57,10 +58,13 @@ public class Commande extends AppCompatActivity {
             }
 
             texteAAfficher += "\n\n\n Total : " + prixTotal +"€";
-
-
             texte.setText(texteAAfficher);
+
+            if(listecommandes.size() == 0){
+                texte.setText("Votre commande est vide.");
+            }
         }
+
         else if (nom != null){
             sharedPreferences
                     .edit()
@@ -69,6 +73,36 @@ public class Commande extends AppCompatActivity {
                     .apply();
         }
 
+        else{
+            texte.setText("Votre commande est vide.");
+        }
 
+
+    }
+
+    public void actionValider(View vue){
+        sharedPreferences
+                .edit()
+                .putStringSet("commandes", null)
+                .putStringSet("prix", null)
+                .apply();
+
+        Toast.makeText(getApplicationContext(), "Merci pour votre commande, elle arrive au plus vite !", Toast.LENGTH_SHORT).show();
+
+        Intent acceuil = new Intent(Commande.this, MainActivity.class); // on declare la nouvelle activite
+        startActivity (acceuil); //on demarre l'activite
+    }
+
+    public void actionAnnuler(View vue){
+        sharedPreferences
+                .edit()
+                .putStringSet("commandes", null)
+                .putStringSet("prix", null)
+                .apply();
+
+        Toast.makeText(getApplicationContext(), "Commande annulée.", Toast.LENGTH_SHORT).show();
+
+        Intent acceuil = new Intent(Commande.this, MainActivity.class); // on declare la nouvelle activite
+        startActivity (acceuil); //on demarre l'activite
     }
 }
