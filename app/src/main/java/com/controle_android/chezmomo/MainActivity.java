@@ -2,6 +2,7 @@ package com.controle_android.chezmomo;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -15,6 +16,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1,
                 data
         );
+        TextView bonAppetit = (TextView) findViewById(R.id.bonAppetit);
+        setFont(bonAppetit,"ClickerScript-Regular.ttf");
 
         liste = (ListView)findViewById(R.id.list);
         liste.setAdapter(adapter);
@@ -87,16 +91,16 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void setFont(TextView textView, String fontName) {
+        if(fontName != null){
+            try {
+                Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/" + fontName);
+                textView.setTypeface(typeface);
+            } catch (Exception e) {
+                Log.e("FONT", fontName + " not found", e);
+            }
+        }
+    }
+
 }
 
-/*
-private View.OnClickListener lienInventaire = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent inventaire = new Intent (MainActivity.this, Inventaire.class); // on declare la nouvelle activite reliee au bouton
-            startActivity (inventaire); //on demarre l'activite
-        }
-
-    };
-
- */

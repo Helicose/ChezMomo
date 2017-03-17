@@ -9,17 +9,22 @@
         android:label="Le Relais du Fort"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Formules"/>
-        <activity android:name=".Carte"/>
-        <activity android:name=".Vins"/>
-        <activity android:name=".Commande"/>
+        <activity android:name=".Formules"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Carte"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Vins"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Commande"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
