@@ -21,6 +21,7 @@
             android:layout_height="wrap_content"
             card_view:cardCornerRadius="4dp"
             android:layout_marginBottom="20dp"
+            android:tag="14"
             android:onClick="redirectionFormule">
 
             <LinearLayout
@@ -122,6 +123,7 @@
             android:layout_height="wrap_content"
             card_view:cardCornerRadius="4dp"
             android:layout_marginBottom="20dp"
+            android:tag="29"
             android:onClick="redirectionFormule">
 
             <LinearLayout
@@ -265,6 +267,7 @@
             android:layout_height="wrap_content"
             card_view:cardCornerRadius="4dp"
             android:layout_marginBottom="20dp"
+            android:tag="12"
             android:onClick="redirectionFormule">
 
             <LinearLayout
@@ -353,6 +356,7 @@
             android:layout_height="wrap_content"
             card_view:cardCornerRadius="4dp"
             android:layout_marginBottom="20dp"
+            android:tag="8"
             android:onClick="redirectionFormule">
 
             <LinearLayout

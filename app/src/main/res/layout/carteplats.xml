@@ -24,7 +24,7 @@
                 android:layout_height="match_parent"
                 card_view:cardCornerRadius="4dp"
                 android:layout_marginBottom="20dp"
-                android:onClick="redirectionFormule">
+                >
 
                     <TextView
                         android:text="Nos Poissons"
@@ -48,7 +48,7 @@
                 android:layout_height="match_parent"
                 card_view:cardCornerRadius="4dp"
                 android:layout_marginBottom="20dp"
-                android:onClick="redirectionFormule">
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -96,7 +96,7 @@
                 android:layout_height="match_parent"
                 card_view:cardCornerRadius="4dp"
                 android:layout_marginBottom="20dp"
-                android:onClick="redirectionFormule">
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -144,7 +144,7 @@
                 android:layout_height="match_parent"
                 card_view:cardCornerRadius="4dp"
                 android:layout_marginBottom="20dp"
-                android:onClick="redirectionFormule">
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -192,7 +192,7 @@
                 android:layout_height="match_parent"
                 card_view:cardCornerRadius="4dp"
                 android:layout_marginBottom="20dp"
-                android:onClick="redirectionFormule">
+                >
 
                 <TextView
                     android:text="Nos Viandes"
@@ -216,7 +216,7 @@
                 android:layout_height="match_parent"
                 card_view:cardCornerRadius="4dp"
                 android:layout_marginBottom="20dp"
-                android:onClick="redirectionFormule">
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -255,7 +255,7 @@
                 android:layout_height="match_parent"
                 card_view:cardCornerRadius="4dp"
                 android:layout_marginBottom="20dp"
-                android:onClick="redirectionFormule">
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -303,7 +303,7 @@
                 android:layout_height="match_parent"
                 card_view:cardCornerRadius="4dp"
                 android:layout_marginBottom="20dp"
-                android:onClick="redirectionFormule">
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -351,7 +351,7 @@
                 android:layout_height="match_parent"
                 card_view:cardCornerRadius="4dp"
                 android:layout_marginBottom="20dp"
-                android:onClick="redirectionFormule">
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -399,7 +399,7 @@
                 android:layout_height="match_parent"
                 card_view:cardCornerRadius="4dp"
                 android:layout_marginBottom="20dp"
-                android:onClick="redirectionFormule">
+                >
 
                 <TextView
                     android:text="Nos Plats Traditionnels"
@@ -423,7 +423,7 @@
                 android:layout_height="match_parent"
                 card_view:cardCornerRadius="4dp"
                 android:layout_marginBottom="20dp"
-                android:onClick="redirectionFormule">
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -462,7 +462,7 @@
                 android:layout_height="match_parent"
                 card_view:cardCornerRadius="4dp"
                 android:layout_marginBottom="20dp"
-                android:onClick="redirectionFormule">
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -510,7 +510,7 @@
                 android:layout_height="match_parent"
                 card_view:cardCornerRadius="4dp"
                 android:layout_marginBottom="20dp"
-                android:onClick="redirectionFormule">
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -558,7 +558,7 @@
                 android:layout_height="match_parent"
                 card_view:cardCornerRadius="4dp"
                 android:layout_marginBottom="20dp"
-                android:onClick="redirectionFormule">
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"

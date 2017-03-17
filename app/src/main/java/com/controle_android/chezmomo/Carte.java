@@ -23,6 +23,7 @@ public class Carte extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.carte);
         setTitle("Choix à la carte !");
+        Intent intent = getIntent();
 
         // Get the ViewPager and set it's PagerAdapter so that it can display items
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
